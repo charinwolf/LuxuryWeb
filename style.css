@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Nuosu SIL', serif;
+  background-color: #F5F5DC;
+}
+
+.offset:before{
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+
+
+/*----Nabvar--*/
+.navbar{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+}
+.navbar-brand img{
+  height: 4rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+  color: #9F1D35;
+}
+
+/*----Slide--*/
+
+.carousel-item{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-caption{
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.carousel-caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+  color: #C8AD7F;
+} 
+.carousel-caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+  letter-spacing: .2rem;
+  color: #000000;
+}
+/*----Story--*/
+.narrow{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: #000000;
+}
+
+/*----Portfolio--*/
+.jumbotron{
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.headline-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: #9F1D35;
+  margin: 0 auto 2rem;
+}
+
+.portfolio img{
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+.portfolio img:hover{
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.row.no-padding [class*=col-]{
+  padding: 0;
+}
+
+.portfolio a{
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid currentColor; 
+  padding: 16px 38px;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #9F1D35;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 2;
+}
+.portfolio{
+  overflow: hidden;
+}
+
+/*----Team--*/
+.card{
+  margin: 2rem;
+}
+
+/*----Clients--*/
+
+.clients img{
+  width: 100%;
+  border-radius: 50%;
+}
+blockquote .fa-quote-left{
+  color: #9F1D35;
+  margin: 1rem;
+}
+
+.clients-hr{
+  border-top: .05rem solid #9F1D35  ;
+}
+
+/*----Contact--*/
+footer{
+  padding: 2rem 0 3rem;
+  background-color: #D3D3D3;
+  margin-top: 2rem;
+}
+footer img{
+  height: 7rem;
+  margin: 1.5rem 0;
+}
+footer a{
+  color: rgb(250, 250, 250);
+}
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+  color: #9F1D35;
+}
+
+/*----Media Queries--*/
+@media (max-width: 767px){
+  .carousel-caption h1{
+    font-size: 2.3rem;    
+    letter-spacing: .15rem;    
+    padding-bottom: .5rem;
+    color: #C8AD7F;
+  } 
+  .carousel-caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .narrow h1{
+    font-size: 1.5rem;
+  }
+  p.lead{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
